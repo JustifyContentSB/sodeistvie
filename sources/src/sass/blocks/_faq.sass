@@ -1,0 +1,58 @@
+.faq
+   padding-bottom: 24px
+   background: #fff
+   &__title
+      margin-bottom: 8px
+      font-weight: 900
+      font-size: 22px
+      line-height: 100%
+      color: var(--accent)
+   &__item
+      font-weight: 300
+      font-size: 13px
+      line-height: 140%
+      color: var(--accent)
+      border-bottom: 1px solid #E6E6E6
+   &__question
+      display: block
+      width: 100%
+      padding: 20px 48px 20px 0
+      text-align: left
+      position: relative
+   &__arrow
+      width: 18px
+      height: 18px
+      max-width: 18px
+      max-height: 18px
+      position: absolute
+      z-index: 5
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      fill: #c4c4c4
+   &__answer
+      display: none
+
+@media all and (min-width: 768px)
+   .faq
+      padding-top: 18px
+      &__title
+         margin-bottom: 2px
+         font-size: 28px
+      &__item
+         font-size: 16px
+      &__question
+         padding: 22px 48px 22px 0
+         letter-spacing: 0.01em
+
+@media all and (min-width: 1280px)
+   .faq
+      padding-top: 58px
+      padding-bottom: 38px
+      &__title
+         margin-bottom: 20px
+
+@media all and (min-width: 1600px)
+   .faq
+      padding-top: 40px
+      padding-bottom: 68px

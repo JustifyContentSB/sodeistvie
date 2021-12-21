@@ -1,0 +1,239 @@
+.header
+   &__top
+      background: #fff
+      &-inner
+         min-height: 50px
+         padding: 13px 4px
+         display: flex
+         align-items: center
+   &__burger
+      width: 24px
+      min-width: 24px
+      height: 24px
+      margin-right: 10px
+   &__city
+      display: none
+      color: var(--accent)
+      &-current
+         display: inline-block
+         padding-right: 20px
+         position: relative
+         text-align: left
+         font-size: 11px
+         letter-spacing: 0.02em
+      &-arrow
+         width: 14px
+         height: 14px
+         fill: #33A2EB
+         position: absolute
+         right: 0
+         top: 50%
+         transform: translateY(-50%)
+   &__time
+      display: none
+   &__contact
+      margin-left: auto
+      color: var(--accent)
+      font-weight: 600
+      font-size: 11px
+      line-height: 100%
+   &__main
+      background: var(--accent)
+      position: relative
+      color: #fff
+      &-inner
+         min-height: 254px
+         padding: 32px 14px 32px 20px
+      &-box
+         position: relative
+         z-index: 5
+   &__menu
+      margin-bottom: 48px
+      display: flex
+      justify-content: space-between
+      align-items: center
+   &__logo
+      display: inline-block
+      width: 147px
+      min-width: 147px
+      img
+         width: 100%
+   &__nav
+      display: none
+      &-link
+         position: relative
+         &::after
+            content: ''
+            width: 0
+            position: absolute
+            bottom: 0
+            right: 0
+            height: 1px
+            background: #fff
+            transition: width .3s ease
+         &:hover,
+         &:focus
+            &::after
+               width: 100%
+               left: 0
+   &__title
+      margin-bottom: 10px
+      font-weight: 900
+      font-size: 20px
+      line-height: 110%
+      color: #fff
+   &__descr
+      font-size: 14px
+      line-height: 110%
+   &__bottom
+      background: var(--accent)
+      color: #9ED8FE
+      &-inner
+         padding-top: 14px
+         padding-bottom: 16px
+      p
+         margin-bottom: 4px
+      &-text
+         color: #fff
+      &-help
+         text-decoration: underline
+         &:hover,
+         &:focus
+            text-decoration: none
+
+@media all and (min-width: 360px)
+   .header
+      &__top
+         &-inner
+            padding: 13px 14px
+
+@media all and (min-width: 480px)
+   .header
+      &__top
+         &-inner
+            padding: 13px 18px
+      &__burger
+         margin-right: 26px
+      &__city
+         &-current
+            font-size: 12px
+      &__contact
+         &-tel
+            font-size: 14px
+      &__logo
+         width: 170px
+         min-width: 170px
+      &__main
+         &-inner
+            min-height: 284px
+            padding-top: 36px
+            padding-bottom: 38px
+      &__menu
+         margin-bottom: 53px
+      &__title
+         margin-bottom: 15px
+         font-size: 30px
+         font-weight: 800
+      &__descr
+         font-size: 16px
+      &__bottom
+         &-inner
+            padding-bottom: 12px
+         &-info
+            margin-bottom: 10px
+
+@media all and (min-width: 768px)
+   .header
+      &__top
+         &-inner
+            padding: 13px 30px
+      &__main
+         &-inner
+            padding: 36px 30px
+      &__title
+         margin-bottom: 32px
+      &__bottom
+         font-size: 12px
+         &-inner
+            padding: 10px 30px 9px
+            display: flex
+            justify-content: space-between
+            align-items: center
+         &-info
+            margin-bottom: 0
+
+@media all and (min-width: 1280px)
+   .header
+      &__burger
+         display: none
+      &__city
+         margin-right: 34px
+      &__time
+         display: flex
+         align-items: center
+         color: #949CAC
+         font-size: 12px
+         line-height: 100%
+         p
+            margin-right: 12px
+            &:last-child
+               margin-right: 0
+      &__main
+         &-inner
+            min-height: 350px
+      &__menu
+         margin-bottom: 70px
+         align-items: flex-end
+         justify-content: flex-start
+      &__logo
+         margin-right: 56px
+      &__write
+         margin-left: auto
+      &__nav
+         width: 100%
+         max-width: 705px
+         display: block
+         &-list
+            display: flex
+            align-items: flex-start
+            flex-wrap: wrap
+         &-item
+            margin-right: 40px
+            &:last-child
+               margin-right: 0
+         &-link
+            font-size: 15px
+            line-height: 110%
+            font-weight: bold
+      &__bottom
+         font-size: 14px
+         &-inner
+            padding: 18px 30px 17px
+         &-info
+            display: flex
+            flex-wrap: wrap
+            p
+               margin-right: 12px
+               &:last-child
+                  margin-right: 0
+         &-help
+            min-width: 150px
+
+@media all and (min-width: 1600px)
+   .header
+      &__main
+         &-inner
+            min-height: 520px
+      &__menu
+         margin-bottom: 110px
+      &__logo
+         margin-right: 84px
+      &__nav
+         &-item
+            margin-right: 54px
+      &__title
+         font-size: 50px
+      &__bottom
+         &-info
+            p
+               margin-right: 16px

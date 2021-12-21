@@ -1,0 +1,138 @@
+.talk
+   overflow: hidden
+   &__inner
+      min-height: 308px
+      padding-right: 12px
+      display: flex
+      justify-content: center
+   &__person
+      width: 185px
+      min-width: 185px
+      position: relative
+      &::after
+         content: ''
+         position: absolute
+         width: 100%
+         top: 0
+         bottom: 20px
+         background: var(--accent)
+         clip-path: polygon(0 0, 0% 100%, 99% 0)
+      &-img
+         width: 240px
+         position: absolute
+         z-index: 1
+         bottom: 0
+         left: 0
+         img
+            width: 100%
+   &__info
+      padding: 30px 0
+      padding-top: 40px
+      position: relative
+      z-index: 5
+   &__title
+      margin-bottom: 13px
+      font-weight: 900
+      font-size: 30px
+      line-height: 100%
+   &__name
+      margin-bottom: 16px
+      font-weight: 300
+      font-size: 16px
+      line-height: 140%
+      color: var(--btnColor)
+   &__text
+      margin-bottom: 23px
+      line-height: 140%
+      font-weight: 300
+
+@media all and (min-width: 480px)
+   .talk
+      &__person
+         width: 240px
+         min-width: 240px
+         margin-right: 5px
+         &::after
+            bottom: 0
+            left: 0
+            clip-path: polygon(0 0, 100% 0, 18% 100%, 0% 100%)
+         &-img
+            width: 300px
+            height: 308px
+      &__name
+         margin-bottom: 20px
+      &__text
+         margin-bottom: 25px
+         font-size: 12px
+
+@media all and (min-width: 768px)
+   .talk
+      &__inner
+         padding-right: 36px
+      &__person
+         width: 290px
+         min-width: 290px
+         margin-right: 40px
+         &::after
+            clip-path: polygon(0 0, 100% 0, 33% 100%, 0% 100%)
+      &__info
+         padding: 53px 0 20px
+      &__title
+         margin-bottom: 7px
+         font-size: 40px
+      &__name
+         margin-bottom: 20px
+      &__text
+         margin-bottom: 30px
+         font-size: 14px
+
+@media all and (min-width: 1280px)
+   .talk
+      &__inner
+         min-height: 403px
+         justify-content: flex-start
+      &__person
+         width: 43%
+         min-width: 43%
+         margin-right: 112px
+         &::after
+            clip-path: polygon(0 0,100% 0,52% 100%,0 100%)
+         &-img
+            width: 391px
+            height: 403px
+            left: 14%
+      &__info
+         max-width: 490px
+         padding-bottom: 55px
+         display: flex
+         flex-direction: column
+         align-items: flex-start
+         justify-content: center
+      &__title
+         margin-bottom: 10px
+         font-size: 44px
+      &__text
+         font-size: 16px
+
+@media all and (min-width: 1600px)
+   .talk
+      &__person
+         margin-right: 94px
+         width: 46%
+         min-width: 46%
+         &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: 0
+            bottom: 0
+            width: calc(100% - 300px)
+            background: var(--accent)
+         &::after
+            width: 300px
+            top: 0
+            left: calc(100% - 310px)
+            clip-path: polygon(0 0,100% 0,12% 100%,0 100%)
+         &-img
+            left: auto
+            right: 83px

@@ -1,0 +1,107 @@
+.feedback
+   padding: 16px 0
+   &__inner
+      width: 100%
+      max-width: 1120px
+      margin: 0 auto
+   &__title
+      margin-bottom: 20px
+      font-weight: 400
+      font-size: 16px
+      line-height: 140%
+   &__text
+      margin-bottom: 20px
+      font-weight: 300
+      font-size: 12px
+      line-height: 140%
+   &__btn
+      display: flex
+      width: 100%
+      margin-bottom: 20px
+      letter-spacing: 0
+      &:last-child
+         margin-bottom: 0
+      &--request
+         background: var(--accent)
+   &__img
+      display: none
+
+@media all and (min-width: 480px)
+   .feedback
+      &__title
+         margin-bottom: 30px
+         font-size: 17px
+      &__text
+         margin-bottom: 28px
+         font-size: 13px
+      &__manage
+         display: flex
+         align-items: center
+         flex-wrap: wrap
+      &__btn
+         width: auto
+         margin-bottom: 20px
+         margin-right: 20px
+         &:last-child
+            margin-bottom: 20px
+
+@media all and (min-width: 768px)
+   .feedback
+      padding: 0
+      overflow: hidden
+      &__inner
+         padding-top: 32px
+         padding-bottom: 13px
+         position: relative
+      &__info
+         width: 100%
+         max-width: 480px
+         margin: 0
+         position: relative
+         z-index: 5
+      &__img
+         display: block
+         position: absolute
+         right: 0
+         bottom: 0
+
+@media all and (min-width: 1120px)
+   .feedback
+      &__img
+         width: 744px
+         img
+            width: 100%
+
+@media all and (min-width: 1280px)
+   .feedback
+      &__inner
+         padding: 58px 0 40px
+      &__info
+         max-width: 650px
+      &__title
+         font-size: 20px
+      &__text
+         padding-right: 45px
+         font-size: 15px
+         line-height: 140%
+      &__img
+         right: 30px
+
+@media all and (min-width: 1300px)
+   .feedback
+      &__inner
+         max-width: 1276px
+
+@media all and (min-width: 1600px)
+   .feedback
+      &__inner
+         padding-bottom: 63px
+      &__title
+         font-size: 22px
+      &__info
+         max-width: 710px
+      &__text
+         padding-right: 30px
+         font-size: 16px
+      &__img
+         width: 701px

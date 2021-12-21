@@ -1,0 +1,61 @@
+header.header
+    .header__inner  
+        .header__top
+            .header__top-inner.container
+                a.header__burger(href="#")
+                    svg 
+                        use(href="images/sprites/main.stack.svg#svg-menu")
+                .header__city
+                    button.header__city-current  Москва и Московская область
+                        svg.header__city-arrow
+                            use(href="images/sprites/main.stack.svg#svg-arrow-down")
+                .header__time
+                    p Понедельник - Пятница: с 09:00 до 21:00
+                    p Суббота - Воскресенье: с 09:00 до 18:00
+                .header__contact
+                    a.header__contact-tel(href="tel:+74955674567") +7 (495) 567-45-67
+        .header__main
+            .header__main-img.background-image
+                    picture
+                        source(srcset="images/header/header-1920.webp" media="(min-width: 1600px)" type="image/webp")
+                        source(srcset="images/header/header-1920.png" media="(min-width: 1600px)" type="image/jpg")
+                        source(srcset="images/header/header-1280.webp" media="(min-width: 1280px)" type="image/webp")
+                        source(srcset="images/header/header-1280.png" media="(min-width: 1280px)" type="image/jpg")
+                        source(srcset="images/header/header-tablet.webp" media="(min-width: 768px)" type="image/webp")
+                        source(srcset="images/header/header-tablet.png" media="(min-width: 768px)" type="image/jpg")
+                        source(srcset="images/header/header-mob-2.webp" media="(min-width: 480px)" type="image/webp")
+                        source(srcset="images/header/header-mob-2.png" media="(min-width: 480px)" type="image/jpg")
+                        source(srcset="images/header/header-mob.webp" type="image/webp")
+                        img(src="images/header/header-mob.jpg", alt="фоновая картинка")
+            .header__main-inner.container
+                .header__main-box
+                    .header__menu 
+                        a.header__logo(href="#")
+                            img(src="images/icons/logo.png", alt="логотип содействие" width="147" height="40")
+                        nav.header__nav
+                            ul.header__nav-list
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Купить
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Снять
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Продать
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Сдать
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Оценить
+                                li.header__nav-item
+                                    a.header__nav-link(href="#") Оформить ипотеку
+                        button.header__write.btn Напишите нам
+                    .header__info 
+                        h1.header__title Вся недвижимость Москвы #[br] и Московской области
+                        p.header__descr.
+                            Квадратные метры умеют работать.
+        .header__bottom
+            .header__bottom-inner.container 
+                .header__bottom-info
+                    p.header__bottom-text.
+                        Недвижимость - устойчивость вашего положения!
+                    p.
+                        Поможем найти друг друга и оформить отношения на рынке недвижимости.
+                a.header__bottom-help(href="#") Подробнее о компании

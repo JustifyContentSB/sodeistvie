@@ -1,0 +1,185 @@
+@use 'sass:math';
+
+%svg-common {
+	background: url("../images/sprites/main.svg") no-repeat;
+}
+
+.svg-svg-arrow-down {
+	@extend %svg-common;
+	background-position: 89.1891891891892% 54.166666666666664%;
+	background-size: math.div(92, 18)*100% auto;
+	width: 18px;
+
+}
+@mixin svg-pos-svg-arrow-down {
+	background-position: 89.1891891891892% 54.166666666666664%;
+}
+@mixin svg-svg-arrow-down-hover {
+	.svg-svg-arrow-down {
+		@include svg-pos-svg-arrow-down-hover
+	}
+}
+
+.svg-svg-arrow-down:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(18, 18)*100%;
+}
+
+.svg-svg-arrow-down-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-svg-menu {
+	@extend %svg-common;
+	background-position: 100% 0;
+	background-size: math.div(92, 26)*100% auto;
+	width: 26px;
+
+}
+@mixin svg-pos-svg-menu {
+	background-position: 100% 0;
+}
+@mixin svg-svg-menu-hover {
+	.svg-svg-menu {
+		@include svg-pos-svg-menu-hover
+	}
+}
+
+.svg-svg-menu:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(26, 26)*100%;
+}
+
+.svg-svg-menu-dims {
+	width: 26px;
+	height: 26px;
+}
+
+.svg-svg-ok {
+	@extend %svg-common;
+	background-position: 0 0;
+	background-size: math.div(92, 33)*100% auto;
+	width: 33px;
+
+}
+@mixin svg-pos-svg-ok {
+	background-position: 0 0;
+}
+@mixin svg-svg-ok-hover {
+	.svg-svg-ok {
+		@include svg-pos-svg-ok-hover
+	}
+}
+
+.svg-svg-ok:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(33, 33)*100%;
+}
+
+.svg-svg-ok-dims {
+	width: 33px;
+	height: 33px;
+}
+
+.svg-svg-twitter {
+	@extend %svg-common;
+	background-position: 55.932203389830505% 0;
+	background-size: math.div(92, 33)*100% auto;
+	width: 33px;
+
+}
+@mixin svg-pos-svg-twitter {
+	background-position: 55.932203389830505% 0;
+}
+@mixin svg-svg-twitter-hover {
+	.svg-svg-twitter {
+		@include svg-pos-svg-twitter-hover
+	}
+}
+
+.svg-svg-twitter:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(33, 33)*100%;
+}
+
+.svg-svg-twitter-dims {
+	width: 33px;
+	height: 33px;
+}
+
+.svg-svg-vk {
+	@extend %svg-common;
+	background-position: 0 100%;
+	background-size: math.div(92, 33)*100% auto;
+	width: 33px;
+
+}
+@mixin svg-pos-svg-vk {
+	background-position: 0 100%;
+}
+@mixin svg-svg-vk-hover {
+	.svg-svg-vk {
+		@include svg-pos-svg-vk-hover
+	}
+}
+
+.svg-svg-vk:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(33, 33)*100%;
+}
+
+.svg-svg-vk-dims {
+	width: 33px;
+	height: 33px;
+}
+
+.svg-svg-youtube {
+	@extend %svg-common;
+	background-position: 55.932203389830505% 100%;
+	background-size: math.div(92, 33)*100% auto;
+	width: 33px;
+
+}
+@mixin svg-pos-svg-youtube {
+	background-position: 55.932203389830505% 100%;
+}
+@mixin svg-svg-youtube-hover {
+	.svg-svg-youtube {
+		@include svg-pos-svg-youtube-hover
+	}
+}
+
+.svg-svg-youtube:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(33, 33)*100%;
+}
+
+.svg-svg-youtube-dims {
+	width: 33px;
+	height: 33px;
+}
+
+
+.image-by-height { width:auto; }
+.image-by-height:before { content:none; }
+.image-by-height > svg { height: inherit; }
+.image-by-height > img { height: inherit !important; vertical-align: top !important; margin: 0 !important; padding: 0 !important; max-width: none !important; max-height: none !important; border: 0 !important; opacity: 0 !important; }

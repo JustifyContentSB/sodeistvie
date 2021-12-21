@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Main</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="yandex-tableau-widget" href="images/favicons/yandex-browser-manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__inner"> 
+          <div class="header__top">
+            <div class="header__top-inner container"><a class="header__burger" href="#">
+                <svg> 
+                  <use href="images/sprites/main.stack.svg#svg-menu"></use>
+                </svg></a>
+              <div class="header__city">
+                <button class="header__city-current"> Москва и Московская область
+                  <svg class="header__city-arrow">
+                    <use href="images/sprites/main.stack.svg#svg-arrow-down"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="header__time">
+                <p>Понедельник - Пятница: с 09:00 до 21:00</p>
+                <p>Суббота - Воскресенье: с 09:00 до 18:00</p>
+              </div>
+              <div class="header__contact"><a class="header__contact-tel" href="tel:+74955674567">+7 (495) 567-45-67</a></div>
+            </div>
+          </div>
+          <div class="header__main">
+            <div class="header__main-img background-image">
+              <picture>
+                <source srcset="images/header/header-1920.webp" media="(min-width: 1600px)" type="image/webp">
+                <source srcset="images/header/header-1920.png" media="(min-width: 1600px)" type="image/jpg">
+                <source srcset="images/header/header-1280.webp" media="(min-width: 1280px)" type="image/webp">
+                <source srcset="images/header/header-1280.png" media="(min-width: 1280px)" type="image/jpg">
+                <source srcset="images/header/header-tablet.webp" media="(min-width: 768px)" type="image/webp">
+                <source srcset="images/header/header-tablet.png" media="(min-width: 768px)" type="image/jpg">
+                <source srcset="images/header/header-mob-2.webp" media="(min-width: 480px)" type="image/webp">
+                <source srcset="images/header/header-mob-2.png" media="(min-width: 480px)" type="image/jpg">
+                <source srcset="images/header/header-mob.webp" type="image/webp"><img src="images/header/header-mob.jpg" alt="фоновая картинка">
+              </picture>
+            </div>
+            <div class="header__main-inner container">
+              <div class="header__main-box">
+                <div class="header__menu"> <a class="header__logo" href="#"><img src="images/icons/logo.png" alt="логотип содействие" width="147" height="40"></a>
+                  <nav class="header__nav">
+                    <ul class="header__nav-list">
+                      <li class="header__nav-item"><a class="header__nav-link" href="#">Купить</a></li>
+                      <li class="header__nav-item"><a class="header__nav-link" href="#">Снять</a></li>
+                      <li class="header__nav-item"><a class="header__nav-link" href="#">Продать</a></li>
+                      <li class="header__nav-item"><a class="header__nav-link" href="#">Сдать</a></li>
+                      <li class="header__nav-item"><a class="header__nav-link" href="#">Оценить</a></li>
+                      <li class="header__nav-item"><a class="header__nav-link" href="#">Оформить ипотеку</a></li>
+                    </ul>
+                  </nav>
+                  <button class="header__write btn">Напишите нам</button>
+                </div>
+                <div class="header__info"> 
+                  <h1 class="header__title">Вся недвижимость Москвы <br> и Московской области</h1>
+                  <p class="header__descr">Квадратные метры умеют работать.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <div class="header__bottom-inner container"> 
+              <div class="header__bottom-info">
+                <p class="header__bottom-text">Недвижимость - устойчивость вашего положения!</p>
+                <p>Поможем найти друг друга и оформить отношения на рынке недвижимости.</p>
+              </div><a class="header__bottom-help" href="#">Подробнее о компании</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="service">
+          <div class="service__inner container">
+            <header class="service__header">
+              <h2 class="service__title">Наши сервисы:</h2><a class="service__all" href="#">Все сервисы </a>
+            </header>
+            <div class="service__list">
+              <div class="service__list-inner">
+                <div class="service__swiper swiper-container">
+                  <div class="service__wrapper swiper-wrapper">
+                    <div class="service__item swiper-slide">
+                      <div class="service__top"><img class="service__icon" src="images/service/service-1.svg" alt="иконка" width="40" height="40">
+                        <h3 class="service__name">Договор найма</h3>
+                      </div>
+                      <p class="service__text">Оформите договор и оградите себя от финансовых потерь. Наши специалисты всегда к вашим услугам</p><a class="service__more" href="#">Подробнее</a>
+                    </div>
+                    <div class="service__item swiper-slide">
+                      <div class="service__top"><img class="service__icon" src="images/service/service-2.svg" alt="иконка" width="40" height="40">
+                        <h3 class="service__name">Подача объявления онлайн</h3>
+                      </div>
+                      <p class="service__text">Самостоятельно разместите объявление и получите фотосъемку недвижимости</p><a class="service__more" href="#">Подробнее</a>
+                    </div>
+                    <div class="service__item swiper-slide">
+                      <div class="service__top"><img class="service__icon" src="images/service/service-3.svg" alt="иконка" width="40" height="40">
+                        <h3 class="service__name">Оценка рыночной стоимости</h3>
+                      </div>
+                      <p class="service__text">Узнайте, сколько стоит ваша недвижимость в течение одного дня</p><a class="service__more" href="#">Подробнее</a>
+                    </div>
+                    <div class="service__item swiper-slide">
+                      <div class="service__top"><img class="service__icon" src="images/service/service-4.svg" alt="иконка" width="40" height="40">
+                        <h3 class="service__name">Страхование</h3>
+                      </div>
+                      <p class="service__text">Оформите страховой полис со скидкой до 50% уже сегодня</p><a class="service__more" href="#">Подробнее</a>
+                    </div>
+                    <div class="service__item swiper-slide">
+                      <div class="service__top"><img class="service__icon" src="images/service/service-4.svg" alt="иконка" width="40" height="40">
+                        <h3 class="service__name">Страхование</h3>
+                      </div>
+                      <p class="service__text">Оформите страховой полис со скидкой до 50% уже сегодня</p><a class="service__more" href="#">Подробнее</a>
+                    </div>
+                    <div class="service__item swiper-slide">
+                      <div class="service__top"><img class="service__icon" src="images/service/service-4.svg" alt="иконка" width="40" height="40">
+                        <h3 class="service__name">Страхование</h3>
+                      </div>
+                      <p class="service__text">Оформите страховой полис со скидкой до 50% уже сегодня</p><a class="service__more" href="#">Подробнее</a>
+                    </div>
+                    <div class="service__item swiper-slide">
+                      <div class="service__top"><img class="service__icon" src="images/service/service-4.svg" alt="иконка" width="40" height="40">
+                        <h3 class="service__name">Страхование</h3>
+                      </div>
+                      <p class="service__text">Оформите страховой полис со скидкой до 50% уже сегодня</p><a class="service__more" href="#">Подробнее</a>
+                    </div>
+                    <div class="service__item swiper-slide">
+                      <div class="service__top"><img class="service__icon" src="images/service/service-4.svg" alt="иконка" width="40" height="40">
+                        <h3 class="service__name">Страхование</h3>
+                      </div>
+                      <p class="service__text">Оформите страховой полис со скидкой до 50% уже сегодня</p><a class="service__more" href="#">Подробнее</a>
+                    </div>
+                    <div class="service__item swiper-slide">
+                      <div class="service__top"><img class="service__icon" src="images/service/service-4.svg" alt="иконка" width="40" height="40">
+                        <h3 class="service__name">Страхование</h3>
+                      </div>
+                      <p class="service__text">Оформите страховой полис со скидкой до 50% уже сегодня</p><a class="service__more" href="#">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev service__prev"></div>
+              <div class="swiper-button-next service__next"></div>
+            </div>
+          </div>
+        </section>
+        <section class="feedback"> 
+          <div class="feedback__inner">
+            <div class="feedback__info container">
+              <h2 class="feedback__title">Aenean eget lacus et leo rhoncus vulputate sed vel urna. Sed consequat fringilla lacus ut sollicitudin. Sed iaculis mattis sem, sed dignissim purus fermentum non.</h2>
+              <p class="feedback__text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus dignissim ut massa non vulputate. Sed nec metus eget sem tempor fermentum ut tempor eros. Etiam accumsan nulla id sapien dapibus hendrerit.</p>
+              <div class="feedback__manage"><a class="feedback__btn feedback__btn--request btn" href="#">Заполните онлайн заявку</a><a class="feedback__btn btn" href="tel:+74955674567">Позвоните нам</a></div>
+            </div>
+            <div class="feedback__img">
+              <picture>
+                <source srcset="images/feedback/feedback-1600.webp" media="(min-width: 1600px)" type="image/webp">
+                <source srcset="images/feedback/feedback-1600.png" media="(min-width: 1600px)" type="image/png">
+                <source srcset="images/feedback/feedback-desk.webp" media="(min-width: 1120px)" type="image/webp">
+                <source srcset="images/feedback/feedback-desk.png" media="(min-width: 1120px)" type="image/png">
+                <source srcset="images/feedback/feedback-tablet.webp" type="image/webp"><img src="images/feedback/feedback-tablet.png" alt="картинка" width="463" height="305">
+              </picture>
+            </div>
+          </div>
+        </section>
+        <section class="features">
+          <div class="features__inner container">
+            <div class="features__list">
+              <div class="features__col">
+                <div class="features__item">
+                  <div class="featires__item-inner">
+                    <h2 class="features__title">Praesent vitae</h2>
+                    <p class="features__text">Sed nec metus eget sem tempor</p>
+                  </div>
+                </div>
+                <div class="features__item">
+                  <div class="featires__item-inner">
+                    <h2 class="features__title">Praesent vitae</h2>
+                    <p class="features__text">Sed nec metus eget sem tempor</p>
+                  </div>
+                </div>
+              </div>
+              <div class="features__col">
+                <div class="features__item">
+                  <div class="featires__item-inner">
+                    <h2 class="features__title">Praesent vitae</h2>
+                    <p class="features__text">Sed nec metus eget sem tempor</p>
+                  </div>
+                </div>
+                <div class="features__item">
+                  <div class="featires__item-inner">
+                    <h2 class="features__title">Praesent vitae</h2>
+                    <p class="features__text">Sed nec metus eget sem tempor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="features__info">
+              <h2 class="features__info-title">Expect more from</h2>
+              <div class="features__info-text">
+                <p>Nunc tincidunt facilisis ex sit amet eleifend. Praesent vitae neque ut nulla egestas scelerisque nec quis purus. Vivamus eget lobortis urna, nec cursus arcu. Sed efficitur volutpat magna, sed feugiat metus convallis iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                <p>
+                  Vivamus dignissim ut massa non vulputate. Sed nec metus eget sem tempor fermentum ut tempor eros. Etiam accumsan nulla id sapien dapibus hendrerit. Mauris nec varius felis. In at fermentum metus, at commodo nunc. Integer venenatis ex at eros commodo, a malesuada tellus auctor. Vivamus facilisis tellus at ornare aliquet.
+                  
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="talk">
+          <div class="talk__inner">
+            <div class="talk__person">
+              <div class="talk__person-img">
+                <picture>
+                  <source srcset="images/task/girl-desk.webp" media="(min-width: 1280px)" type="image/webp">
+                  <source srcset="images/task/girl-desk.png" media="(min-width: 1280px)" type="image/png">
+                  <source srcset="images/task/girl-tablet.webp" media="(min-width: 480px)" type="image/webp">
+                  <source srcset="images/task/girl-tablet.png" media="(min-width: 480px)" type="image/png">
+                  <source srcset="images/task/girl-tel.webp" type="image/webp"><img src="images/task/girl-tel.png" alt="подарки" width="240" height="308">
+                </picture>
+              </div>
+            </div>
+            <div class="talk__info">
+              <h2 class="talk__title">Let's Talk</h2>
+              <p class="talk__name">Robert Fox</p>
+              <p class="talk__text">Whenever you’re ready, our team of Home Consultants are on the line to answer your questions, walk you through your options, and help you make more informed decisions about your home.</p><a class="talk__btn btn" href="tel:+74955674567">Позвоните нам</a>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="about__inner container">
+            <h2 class="about__title">Cras vel rhoncus orci</h2>
+            <p class="about__text">
+              Sed nec metus eget sem tempor fermentum ut tempor eros. Etiam accumsan nulla id sapien dapibus hendrerit. Mauris nec varius felis. In at fermentum metus, at commodo nunc. Integer venenatis ex at eros commodo, a malesuada tellus auctor. Vivamus facilisis tellus at ornare aliquet.
+              
+            </p>
+          </div>
+        </section>
+        <section class="form">
+          <div class="form__wrapper container">
+            <div class="form__inner">
+              <div class="form__header">
+                <h2 class="form__title">Консультируем бесплатно</h2>
+                <p class="form__consultation">  Оставьте заявку на консультацию или звоните нам по телефону: <a href="tel:+74951200005">+7 (495) 120-00-05</a></p>
+              </div>
+              <div class="form__manage">
+                <label class="form__label form__inp">
+                  <input class="form__field" type="text" placeholder="Как к вам обращаться?">
+                </label>
+                <label class="form__label form__inp">
+                  <input class="form__field" type="tel" placeholder="+7 ">
+                </label>
+                <button class="form__btn form__inp btn">Позвоните нам</button>
+              </div>
+              <p class="form__offer">  Отправляя заявку, вы соглашаетесь на обработку <a href="#">персональных данных</a></p>
+            </div>
+          </div>
+        </section>
+        <section class="faq">
+          <div class="faq__inner container">
+            <h2 class="faq__title">Frequently Asked Questions</h2>
+            <ul class="faq__list">
+              <li class="faq__item">
+                <button class="faq__question">Does HomeLight cost money?
+                  <svg class="faq__arrow">
+                    <use href="images/sprites/main.stack.svg#svg-arrow-down"></use>
+                  </svg>
+                </button>
+                <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.</p>
+              </li>
+              <li class="faq__item">
+                <button class="faq__question">Do agents pay to be listed on HomeLight?
+                  <svg class="faq__arrow">
+                    <use href="images/sprites/main.stack.svg#svg-arrow-down"></use>
+                  </svg>
+                </button>
+                <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.</p>
+              </li>
+              <li class="faq__item">
+                <button class="faq__question">How does HomeLight make money?
+                  <svg class="faq__arrow">
+                    <use href="images/sprites/main.stack.svg#svg-arrow-down"></use>
+                  </svg>
+                </button>
+                <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.</p>
+              </li>
+              <li class="faq__item">
+                <button class="faq__question">Do I need to use the agent that HomeLight recommended?
+                  <svg class="faq__arrow">
+                    <use href="images/sprites/main.stack.svg#svg-arrow-down"></use>
+                  </svg>
+                </button>
+                <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.</p>
+              </li>
+              <li class="faq__item">
+                <button class="faq__question">What's the difference between a top agent and the average real estate agent?
+                  <svg class="faq__arrow">
+                    <use href="images/sprites/main.stack.svg#svg-arrow-down"></use>
+                  </svg>
+                </button>
+                <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.</p>
+              </li>
+              <li class="faq__item">
+                <button class="faq__question">I'm a real estate agent. How do I sign up?
+                  <svg class="faq__arrow">
+                    <use href="images/sprites/main.stack.svg#svg-arrow-down"></use>
+                  </svg>
+                </button>
+                <p class="faq__answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="footer__inner">
+            <div class="footer__main container">
+              <div class="footer__top"><a class="footer__logo" href="#"><img src="images/icons/logo-dark.png" alt="логотип компании" width="170" height="46"></a></div>
+              <div class="footer__bottom">
+                <nav class="footer__nav">
+                  <div class="footer__nav-col">
+                    <h2 class="footer__nav-title">Недвижимость</h2>
+                    <ul class="footer__nav-list">
+                      <li class="footer__nav-item"><a href="#">Квартиры</a></li>
+                      <li class="footer__nav-item"><a href="#">Новостройки</a></li>
+                      <li class="footer__nav-item"><a href="#">Дома и участки</a></li>
+                      <li class="footer__nav-item"><a href="#">Аренда</a></li>
+                      <li class="footer__nav-item"><a href="#">Коммерческая</a></li>
+                      <li class="footer__nav-item"><a href="#">Гаражи</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer__nav-col">
+                    <h2 class="footer__nav-title">О компании</h2>
+                    <ul class="footer__nav-list">
+                      <li class="footer__nav-item"><a href="#">Отзывы</a></li>
+                      <li class="footer__nav-item"><a href="#">Вакансии</a></li>
+                      <li class="footer__nav-item"><a href="#">СМИ о нас</a></li>
+                      <li class="footer__nav-item"><a href="#">Новости</a></li>
+                      <li class="footer__nav-item"><a href="#">Пресс-центр</a></li>
+                      <li class="footer__nav-item"><a href="#">Франшиза</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer__nav-col">
+                    <h2 class="footer__nav-title">Услуги</h2>
+                    <ul class="footer__nav-list">
+                      <li class="footer__nav-item"><a href="#">Продать</a></li>
+                      <li class="footer__nav-item"><a href="#">Купить</a></li>
+                      <li class="footer__nav-item"><a href="#">Сдать и снять</a></li>
+                      <li class="footer__nav-item"><a href="#">Ипотека</a></li>
+                      <li class="footer__nav-item"><a href="#">Бонусы клиентам</a></li>
+                      <li class="footer__nav-item"><a href="#">Стоимость услуг</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer__nav-col">
+                    <h2 class="footer__nav-title">Другое</h2>
+                    <ul class="footer__nav-list">
+                      <li class="footer__nav-item"><a href="#">Ипотека</a></li>
+                      <li class="footer__nav-item"><a href="#">Аналитика</a></li>
+                      <li class="footer__nav-item"><a href="#">Стоимость услуг</a></li>
+                      <li class="footer__nav-item"><a href="#">Рефинансирование</a></li>
+                      <li class="footer__nav-item"><a href="#">Гарантия безопасности</a></li>
+                    </ul>
+                  </div>
+                </nav>
+                <address class="footer__address"><a class="footer__tel" href="tel:+74955674567">+7 (495) 567-45-67</a>
+                  <div class="footer__time">
+                    <p>Понедельник - Пятница: с 09:00 до 21:00</p>
+                    <p>Суббота - Воскресенье: с 09:00 до 18:00</p>
+                  </div>
+                  <p class="footer__location">  Москва, ул. Профсоюзная, д. 56 этаж 10, <br><a href="tel:+74951200005">тел. +7 (495) 120-00-05</a></p>
+                  <ul class="footer__soc">
+                    <li class="footer__soc-item"><a class="footer__soc-link footer__soc-link--youtube" href="#">
+                        <svg>
+                          <use href="images/sprites/main.stack.svg#svg-youtube"></use>
+                        </svg></a></li>
+                    <li class="footer__soc-item"><a class="footer__soc-link footer__soc-link--vk" href="#">
+                        <svg>
+                          <use href="images/sprites/main.stack.svg#svg-vk"></use>
+                        </svg></a></li>
+                    <li class="footer__soc-item"><a class="footer__soc-link footer__soc-link--ok" href="#">
+                        <svg>
+                          <use href="images/sprites/main.stack.svg#svg-ok"></use>
+                        </svg></a></li>
+                    <li class="footer__soc-item"><a class="footer__soc-link footer__soc-link--twitter" href="#">
+                        <svg>
+                          <use href="images/sprites/main.stack.svg#svg-twitter"></use>
+                        </svg></a></li>
+                  </ul>
+                </address>
+              </div>
+            </div>
+            <div class="footer__copy">
+              <p class="footer__copy-text container">©  2000-2021 Компания «Этажи». Все права защищены. При использовании материалов гиперссылка обязательна.</p>
+            </div>
+          </div>
+        </footer>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

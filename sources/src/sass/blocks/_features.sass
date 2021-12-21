@@ -1,0 +1,124 @@
+.features
+   padding: 26px 0 17px
+   background: #fff
+   &__list
+      margin-bottom: 4px
+      display: flex
+      justify-content: center
+   &__col
+      margin-right: 20px
+      &:nth-child(2n)
+         margin-right: 0
+   &__item
+      margin-bottom: 20px
+   &__title
+      margin-bottom: 4px
+      font-weight: 900
+      font-size: 15px
+      line-height: 100%
+   &__text
+      font-weight: 300
+      line-height: 140%
+   &__info
+      &-title
+         margin-bottom: 16px
+         font-weight: 900
+         font-size: 24px
+         line-height: 100%
+      &-text
+         font-weight: 300
+         font-size: 12px
+         line-height: 140%
+         p
+            margin-bottom: 20px
+            &:last-child
+               margin-bottom: 0
+
+@media all and (min-width: 480px)
+   .features
+      &__info
+         &-text
+            font-size: 13px
+            p
+               margin-bottom: 16px
+
+@media all and (min-width: 768px)
+   .features
+      padding: 34px 0 38px
+      &__list
+         margin-bottom: 12px
+      &__item
+         width: 50%
+         padding: 0 12px
+         position: relative
+         &::after
+            content: ''
+            width: 1px
+            position: absolute
+            right: 0
+            top: 0
+            bottom: 0
+            background: #dadada
+      &__col
+         width: 50%
+         margin-right: 0
+         display: flex
+         &:nth-child(odd)
+            .features__item
+               &:nth-child(1)
+                  padding-left: 0
+         &:nth-child(even)
+            .features__item
+               &:nth-child(2)
+                  padding-right: 0
+                  &::after
+                     display: none
+      &__info
+         &-title
+            margin-bottom: 20px
+            font-size: 26px
+
+@media all and (min-width: 1280px)
+   .features
+      padding: 40px 0
+      &__title
+         font-size: 24px
+      &__text
+         font-size: 14px
+         line-height: 140%
+      &__list
+         margin-bottom: 22px
+      &__col
+         &:nth-child(1)
+            .features
+               &__item
+                  flex-grow: 1
+                  &:nth-child(1)
+                     width: 46%
+                     max-width: 46%
+                     justify-content: flex-start
+         &:nth-child(2)
+            .features
+               &__item
+                  flex-grow: 1
+                  &:nth-child(2)
+                     width: 46%
+                     max-width: 46%
+      &__item
+         padding-top: 14px
+         padding-bottom: 14px
+         display: flex
+         justify-content: center
+      &__info
+         &-title
+            font-size: 28px
+         &-text
+            font-size: 16px
+            p
+               margin-bottom: 20px
+
+@media all and (min-width: 1600px)
+   .features
+      padding: 70px 0
+      &__list
+         margin-bottom: 53px
