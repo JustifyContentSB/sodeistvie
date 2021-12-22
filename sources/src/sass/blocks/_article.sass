@@ -1,0 +1,133 @@
+.article
+   font-weight: 300
+   font-size: 14px
+   line-height: 160%
+   color: var(--accent)
+   &__title
+      margin-bottom: 24px
+      font-weight: 800
+      font-size: 30px
+      line-height: 110%
+   &__info
+      margin-bottom: 20px
+   &__person
+      margin-bottom: 20px
+      display: none
+   &__box
+      margin-bottom: 20px
+      &-title
+         margin-bottom: 10px
+         font-size: 18px
+         line-height: 160%
+   &__picture
+      margin-bottom: 20px
+      img
+         width: 100%
+   &__notice
+      margin-bottom: 20px
+   &__images
+      margin-bottom: 20px
+      &-img
+         margin-bottom: 12px
+         img
+            width: 100%
+   &__feedback
+      margin-bottom: 20px
+   &__houses
+      margin-bottom: 14px
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      flex-wrap: wrap
+      &-img
+         width: calc(50% - 6px)
+         height: 300px
+         margin-bottom: 6px
+         display: flex
+         justify-content: center
+         align-items: center
+         overflow: hidden
+         img
+            height: 300px
+            width: auto
+            max-width: none
+
+@media all and (min-width: 480px)
+   .article
+      &__person
+         display: block
+      &__box
+         &-wrapper
+            display: flex
+            justify-content: space-between
+            .article__box
+               width: calc(50% - 6px)
+      &__images
+         margin-bottom: 8px
+         display: flex
+         flex-wrap: wrap
+         justify-content: space-between
+         &-img
+            width: calc(50% - 6px)
+            min-width: calc(50% - 6px)
+
+@media all and (min-width: 768px)
+   .article
+      font-size: 16px
+      &__inner
+         max-width: 758px
+         margin: 0
+      &__title, &__box, &__person, &__picture, &__notice, &__images, &__feedback
+         margin-bottom: 30px
+      &__images
+         display: grid
+         grid-template-columns: repeat(4, 1fr)
+         grid-gap: 18px
+         &-img
+            width: auto
+            min-width: auto
+            height: 300px
+            margin: 0
+            display: flex
+            justify-content: center
+            align-items: center
+            overflow: hidden
+            img
+               width: auto
+               max-width: none
+               height: 300px
+      &__houses
+         margin-bottom: 6px
+         &-img
+            width: calc(50% - 10px)
+
+@media all and (min-width: 1280px)
+   .article
+      width: 100%
+      max-width: 1120px
+      margin: 0 auto
+      padding-right: 360px
+      position: relative
+      &__title
+         margin-bottom: 40px
+      &__person
+         margin: 0
+         position: absolute
+         right: 30px
+         top: 12px
+
+@media all and (min-width: 1300px)
+   .article
+      max-width: 1276px
+
+@media all and (min-width: 1366px)
+   .article
+      &__inner
+         max-width: 804px
+      &__title, &__box, &__person, &__picture, &__notice, &__images, &__feedback
+         margin-bottom: 40px
+      &__box
+         &-wrapper
+            .article
+               &__box
+                  width: calc(50% - 10px)

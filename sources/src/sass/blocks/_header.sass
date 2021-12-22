@@ -38,7 +38,7 @@
       font-size: 11px
       line-height: 100%
    &__main
-      background: var(--accent)
+      background: linear-gradient(270.04deg, #2F4D86 0.03%, #273653 99.97%)
       position: relative
       color: #fff
       &-inner
@@ -88,6 +88,7 @@
    &__bottom
       background: var(--accent)
       color: #9ED8FE
+      font-size: 11px
       &-inner
          padding-top: 14px
          padding-bottom: 16px
@@ -100,6 +101,19 @@
          &:hover,
          &:focus
             text-decoration: none
+   &--minimal
+      margin-bottom: 24px
+      .header
+         &__logo
+            width: 170px
+         &__menu
+            margin-bottom: 0
+         &__main
+            &-inner
+               min-height: 111px
+               padding: 27px 14px 38px 32px
+         &__write
+            display: none
 
 @media all and (min-width: 360px)
    .header
@@ -161,6 +175,8 @@
             align-items: center
          &-info
             margin-bottom: 0
+      &--minimal
+         margin-bottom: 40px
 
 @media all and (min-width: 1280px)
    .header
@@ -191,7 +207,7 @@
          margin-left: auto
       &__nav
          width: 100%
-         max-width: 705px
+         max-width: 700px
          display: block
          &-list
             display: flex
@@ -218,6 +234,15 @@
                   margin-right: 0
          &-help
             min-width: 150px
+      &--minimal
+         margin-bottom: 24px
+         .header
+            &__main
+               &-inner
+                  min-height: 148px
+                  padding: 36px 26px 42px 32px
+            &__write
+               display: block
 
 @media all and (min-width: 1600px)
    .header

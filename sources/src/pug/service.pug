@@ -1,0 +1,324 @@
+extends base/_layout
+block head
+    title Сервисы
+
+block header
+    header.header.header--minimal
+        .header__inner  
+            .header__top
+                .header__top-inner.container
+                    a.header__burger(href="#")
+                        svg 
+                            use(href="images/sprites/main.stack.svg#svg-menu")
+                    .header__city
+                        button.header__city-current  Москва и Московская область
+                            svg.header__city-arrow
+                                use(href="images/sprites/main.stack.svg#svg-arrow-down")
+                    .header__time
+                        p Понедельник - Пятница: с 09:00 до 21:00
+                        p Суббота - Воскресенье: с 09:00 до 18:00
+                    .header__contact
+                        a.header__contact-tel(href="tel:+74955674567") +7 (495) 567-45-67
+            .header__main
+                .header__main-inner.container
+                    .header__main-box
+                        .header__menu 
+                            a.header__logo(href="#")
+                                img(src="images/icons/logo.png" alt="логотип содействие" width="147" height="40")
+                            nav.header__nav
+                                ul.header__nav-list
+                                    li.header__nav-item
+                                        a.header__nav-link(href="#") Купить
+                                    li.header__nav-item
+                                        a.header__nav-link(href="#") Снять
+                                    li.header__nav-item
+                                        a.header__nav-link(href="#") Продать
+                                    li.header__nav-item
+                                        a.header__nav-link(href="#") Сдать
+                                    li.header__nav-item
+                                        a.header__nav-link(href="#") Оценить
+                                    li.header__nav-item
+                                        a.header__nav-link(href="#") Оформить ипотеку
+                            button.header__write.btn Напишите нам
+
+block page
+    .breadcrumbs.container
+        ul.breadcrumbs__list
+            li.breadcrumbs__item
+                a.breadcrumbs__link(href="#") Главная
+            li.breadcrumbs__item
+                a.breadcrumbs__link(href="#") Название раздела
+    article.article
+        .article__wrapper.container
+            .article__inner
+                h1.article__title Название раздела
+                .article__top
+                    .article__box
+                        p.article__box-text.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut magna pulvinar, elementum elit ut, ultricies sapien. Proin elementum massa sit amet vehicula ullamcorper. Morbi convallis diam mi, id rhoncus nunc sagittis eget. Cras lacinia fringilla arcu. Fusce nec nisi lectus. Vivamus laoreet non mi sit amet imperdiet. Maecenas et eros lacus. Aenean aliquam malesuada tellus, eget convallis massa porttitor vel. Integer rhoncus elit sit amet cursus tincidunt. Maecenas eu dictum ligula.
+                    block person
+                        include blocks/_person
+                    .article__box
+                        h2.article__box-title Pellentesque convallis enim neque
+                        p.article__box-text.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut magna pulvinar, elementum elit ut, ultricies sapien. Proin elementum massa sit amet vehicula ullamcorper. Morbi convallis diam mi, id rhoncus nunc sagittis eget. Cras lacinia fringilla arcu. Fusce nec nisi lectus. Vivamus laoreet non mi sit amet imperdiet. Maecenas et eros lacus. Aenean aliquam malesuada tellus, eget convallis massa porttitor vel. Integer rhoncus elit sit amet cursus tincidunt. Maecenas eu dictum ligula.
+                    .article__picture
+                        picture
+                            source(srcset="images/article/picture-desk.webp" media="(min-width: 1600px)" type="image/webp")
+                            source(srcset="images/article/picture-desk.jpg" media="(min-width: 1600px)" type="image/jpg")
+                            source(srcset="images/article/picture-tablet.webp" media="(min-width: 768px)" type="image/webp")
+                            source(srcset="images/article/picture-tablet.jpg" media="(min-width: 768px)" type="image/jpg")
+                            source(srcset="images/article/picture-mob-2.webp" media="(min-width: 480px)" type="image/webp")
+                            source(srcset="images/article/picture-mob-2.jpg" media="(min-width: 480px)" type="image/jpg")
+                            source(srcset="images/article/picture-mob.webp" type="image/webp")
+                            img(src="images/article/picture-mob.jpg" alt="картинка" width="324" height="300")
+                .article__bottom
+                    .article__notice.notice
+                        .notice__inner
+                            p.notice__text.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut magna pulvinar, elementum elit ut, ultricies sapien. Proin elementum massa sit amet vehicula ullamcorper. Morbi convallis diam mi, id rhoncus nunc sagittis eget. Cras lacinia fringilla arcu. Fusce nec nisi lectus. Vivamus laoreet non mi sit amet imperdiet. Maecenas et eros lacus. Aenean aliquam malesuada tellus, eget convallis massa porttitor vel. Integer rhoncus elit sit amet cursus tincidunt. Maecenas eu dictum ligula.
+                            button.notice__btn.btn Напишите нам
+                    .article__box-wrapper
+                        .article__box
+                            h2.article__box-title Pellentesque convallis enim neque
+                            p.article__box-text.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut magna pulvinar, elementum elit ut, ultricies sapien. Proin elementum massa sit amet vehicula ullamcorper. Morbi convallis diam mi, id rhoncus nunc sagittis eget. Cras lacinia fringilla arcu. Fusce nec nisi lectus. Vivamus laoreet non mi sit amet imperdiet. Maecenas et eros lacus. Aenean aliquam malesuada tellus, eget convallis massa porttitor vel. Integer rhoncus elit sit amet cursus tincidunt. Maecenas eu dictum ligula.
+                        .article__box
+                            h2.article__box-title Pellentesque convallis enim neque
+                            p.article__box-text.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut magna pulvinar, elementum elit ut, ultricies sapien. Proin elementum massa sit amet vehicula ullamcorper. Morbi convallis diam mi, id rhoncus nunc sagittis eget. Cras lacinia fringilla arcu. Fusce nec nisi lectus. Vivamus laoreet non mi sit amet imperdiet. Maecenas et eros lacus. Aenean aliquam malesuada tellus, eget convallis massa porttitor vel. Integer rhoncus elit sit amet cursus tincidunt. Maecenas eu dictum ligula.
+                    .article__images
+                        .article__images-img
+                            picture
+                                source(srcset="images/article/article-desk-1.webp" media="(min-width: 480px)" type="image/webp")
+                                source(srcset="images/article/article-desk-1.jpg" media="(min-width: 480px)" type="image/jpg")
+                                source(srcset="images/article/article-mob-1.webp" type="image/webp")
+                                img(src="images/article/article-mob-1.jpg" alt="картинка" width="324" height="144")
+                        .article__images-img
+                            picture
+                                source(srcset="images/article/article-desk-2.webp" media="(min-width: 480px)" type="image/webp")
+                                source(srcset="images/article/article-desk-2.jpg" media="(min-width: 480px)" type="image/jpg")
+                                source(srcset="images/article/article-mob-2.webp" type="image/webp")
+                                img(src="images/article/article-mob-2.jpg" alt="картинка" width="324" height="144")
+                        .article__images-img
+                            picture
+                                source(srcset="images/article/article-desk-3.webp" media="(min-width: 480px)" type="image/webp")
+                                source(srcset="images/article/article-desk-3.jpg" media="(min-width: 480px)" type="image/jpg")
+                                source(srcset="images/article/article-mob-3.webp" type="image/webp")
+                                img(src="images/article/article-mob-3.jpg" alt="картинка" width="324" height="144")
+                        .article__images-img
+                            picture
+                                source(srcset="images/article/article-desk-4.webp" media="(min-width: 480px)" type="image/webp")
+                                source(srcset="images/article/article-desk-4.jpg" media="(min-width: 480px)" type="image/jpg")
+                                source(srcset="images/article/article-mob-4.webp" type="image/webp")
+                                img(src="images/article/article-mob-4.jpg" alt="картинка" width="324" height="144")
+
+                    section.article__feedback.feedback.feedback--article
+                        .feedback__inner
+                            .feedback__info.container
+                                h2.feedback__title.
+                                    Aenean eget lacus et leo rhoncus vulputate sed vel urna. Sed consequat fringilla lacus ut sollicitudin. Sed iaculis mattis sem, sed dignissim purus fermentum non.
+                                p.feedback__text.
+                                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus dignissim ut massa non vulputate. Sed nec metus eget sem tempor fermentum ut tempor eros. Etiam accumsan nulla id sapien dapibus hendrerit.
+                                .feedback__manage
+                                    a.feedback__btn.feedback__btn--request.btn(href="#") Заполните онлайн заявку
+                                    a.feedback__btn.btn(href="tel:+74955674567") Позвоните нам
+                            .feedback__img
+                                picture
+                                    source(srcset="images/feedback/feedback-article.webp" type="image/webp")
+                                    img(src="images/feedback/feedback-article.png" alt="картинка" width="463" height="305")
+
+                    .article__houses
+                        .article__houses-img
+                            picture
+                                source(srcset="images/article/house-1.webp" type="image/webp")
+                                img(src="images/article/house-1.jpg" alt="картинка" width="701" height="403")
+                        .article__houses-img
+                            picture
+                                source(srcset="images/article/house-2.webp" type="image/webp")
+                                img(src="images/article/house-2.jpg" alt="картинка" width="392" height="300")
+
+        section.faq.faq--bottom
+            .faq__inner.container
+                h2.faq__title Frequently Asked Questions
+                ul.faq__list
+                    li.faq__item
+                        button.faq__question Does HomeLight cost money?
+                            svg.faq__arrow
+                                use(href="images/sprites/main.stack.svg#svg-arrow-down")
+                        p.faq__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.
+                    li.faq__item
+                        button.faq__question Do agents pay to be listed on HomeLight?
+                            svg.faq__arrow
+                                use(href="images/sprites/main.stack.svg#svg-arrow-down")
+                        p.faq__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.
+                    li.faq__item
+                        button.faq__question How does HomeLight make money?
+                            svg.faq__arrow
+                                use(href="images/sprites/main.stack.svg#svg-arrow-down")
+                        p.faq__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.
+                    li.faq__item
+                        button.faq__question Do I need to use the agent that HomeLight recommended?
+                            svg.faq__arrow
+                                use(href="images/sprites/main.stack.svg#svg-arrow-down")
+                        p.faq__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.
+                    li.faq__item
+                        button.faq__question What's the difference between a top agent and the average real estate agent?
+                            svg.faq__arrow
+                                use(href="images/sprites/main.stack.svg#svg-arrow-down")
+                        p.faq__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.
+                    li.faq__item
+                        button.faq__question I'm a real estate agent. How do I sign up?
+                            svg.faq__arrow
+                                use(href="images/sprites/main.stack.svg#svg-arrow-down")
+                        p.faq__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.
+
+    section.form
+        .form__wrapper.container
+            .form__inner
+                .form__header
+                    h2.form__title Консультируем бесплатно
+                    p.form__consultation
+                        |   Оставьте заявку на консультацию или звоните нам по телефону: 
+                        a(href="tel:+74951200005") +7 (495) 120-00-05
+                .form__manage
+                    label.form__label.form__inp
+                        input.form__field(type="text" placeholder="Как к вам обращаться?")
+                    label.form__label.form__inp
+                        input.form__field(type="tel" placeholder="+7 ")
+                    button.form__btn.form__inp.btn Позвоните нам
+                p.form__offer
+                    |   Отправляя заявку, вы соглашаетесь на обработку 
+                    a(href="#") персональных данных
+
+    section.faq
+        .faq__inner.container
+            h2.faq__title Frequently Asked Questions
+            ul.faq__list
+                li.faq__item
+                    button.faq__question Does HomeLight cost money?
+                        svg.faq__arrow
+                            use(href="images/sprites/main.stack.svg#svg-arrow-down")
+                    p.faq__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.
+                li.faq__item
+                    button.faq__question Do agents pay to be listed on HomeLight?
+                        svg.faq__arrow
+                            use(href="images/sprites/main.stack.svg#svg-arrow-down")
+                    p.faq__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.
+                li.faq__item
+                    button.faq__question How does HomeLight make money?
+                        svg.faq__arrow
+                            use(href="images/sprites/main.stack.svg#svg-arrow-down")
+                    p.faq__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.
+                li.faq__item
+                    button.faq__question Do I need to use the agent that HomeLight recommended?
+                        svg.faq__arrow
+                            use(href="images/sprites/main.stack.svg#svg-arrow-down")
+                    p.faq__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.
+                li.faq__item
+                    button.faq__question What's the difference between a top agent and the average real estate agent?
+                        svg.faq__arrow
+                            use(href="images/sprites/main.stack.svg#svg-arrow-down")
+                    p.faq__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.
+                li.faq__item
+                    button.faq__question I'm a real estate agent. How do I sign up?
+                        svg.faq__arrow
+                            use(href="images/sprites/main.stack.svg#svg-arrow-down")
+                    p.faq__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, corporis.
+
+    footer.footer
+        .footer__inner
+            .footer__main.container
+                .footer__top
+                    a.footer__logo(href="#")
+                        img(src="images/icons/logo-dark.png" alt="логотип компании" width="170" height="46")
+                .footer__bottom
+                    nav.footer__nav
+                        .footer__nav-col
+                            h2.footer__nav-title Недвижимость
+                            ul.footer__nav-list
+                                li.footer__nav-item
+                                    a(href="#") Квартиры
+                                li.footer__nav-item
+                                    a(href="#") Новостройки
+                                li.footer__nav-item
+                                    a(href="#") Дома и участки
+                                li.footer__nav-item
+                                    a(href="#") Аренда
+                                li.footer__nav-item
+                                    a(href="#") Коммерческая
+                                li.footer__nav-item
+                                    a(href="#") Гаражи
+                        .footer__nav-col
+                            h2.footer__nav-title О компании
+                            ul.footer__nav-list
+                                li.footer__nav-item
+                                    a(href="#") Отзывы
+                                li.footer__nav-item
+                                    a(href="#") Вакансии
+                                li.footer__nav-item
+                                    a(href="#") СМИ о нас
+                                li.footer__nav-item
+                                    a(href="#") Новости
+                                li.footer__nav-item
+                                    a(href="#") Пресс-центр
+                                li.footer__nav-item
+                                    a(href="#") Франшиза
+                        .footer__nav-col
+                            h2.footer__nav-title Услуги
+                            ul.footer__nav-list
+                                li.footer__nav-item
+                                    a(href="#") Продать
+                                li.footer__nav-item
+                                    a(href="#") Купить
+                                li.footer__nav-item
+                                    a(href="#") Сдать и снять
+                                li.footer__nav-item
+                                    a(href="#") Ипотека
+                                li.footer__nav-item
+                                    a(href="#") Бонусы клиентам
+                                li.footer__nav-item
+                                    a(href="#") Стоимость услуг
+                        .footer__nav-col
+                            h2.footer__nav-title Другое
+                            ul.footer__nav-list
+                                li.footer__nav-item
+                                    a(href="#") Ипотека
+                                li.footer__nav-item
+                                    a(href="#") Аналитика
+                                li.footer__nav-item
+                                    a(href="#") Стоимость услуг
+                                li.footer__nav-item
+                                    a(href="#") Рефинансирование
+                                li.footer__nav-item
+                                    a(href="#") Гарантия безопасности
+                    address.footer__address
+                        a.footer__tel(href="tel:+74955674567") +7 (495) 567-45-67
+                        .footer__time
+                            p Понедельник - Пятница: с 09:00 до 21:00
+                            p Суббота - Воскресенье: с 09:00 до 18:00
+                        p.footer__location
+                            |   Москва, ул. Профсоюзная, д. 56 этаж 10, #[br]
+                            a(href="tel:+74951200005") тел. +7 (495) 120-00-05
+                        ul.footer__soc
+                            li.footer__soc-item
+                                a.footer__soc-link.footer__soc-link--youtube(href="#")
+                                    svg
+                                        use(href="images/sprites/main.stack.svg#svg-youtube")
+                            li.footer__soc-item
+                                a.footer__soc-link.footer__soc-link--vk(href="#")
+                                    svg
+                                        use(href="images/sprites/main.stack.svg#svg-vk")
+                            li.footer__soc-item
+                                a.footer__soc-link.footer__soc-link--ok(href="#")
+                                    svg
+                                        use(href="images/sprites/main.stack.svg#svg-ok")
+                            li.footer__soc-item
+                                a.footer__soc-link.footer__soc-link--twitter(href="#")
+                                    svg
+                                        use(href="images/sprites/main.stack.svg#svg-twitter")
+            .footer__copy
+                p.footer__copy-text.container.
+                    ©  2000-2021 Компания «Этажи». Все права защищены. При использовании материалов гиперссылка обязательна.
+
+

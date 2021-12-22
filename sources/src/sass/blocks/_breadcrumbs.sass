@@ -1,0 +1,23 @@
+.breadcrumbs
+   margin-bottom: 3px
+   font-size: 11px
+   color: var(--textColor)
+   &__list
+      display: flex
+      flex-wrap: wrap
+   &__item
+      padding-right: 12px
+      margin-right: 8px
+      position: relative
+      &::after
+         content: '/'
+         position: absolute
+         right: 0
+      &:last-child
+         margin-right: 0
+         &::after
+            display: none
+
+@media all and (min-width: 1280px)
+   .breadcrumbs
+      margin-bottom: 12px
