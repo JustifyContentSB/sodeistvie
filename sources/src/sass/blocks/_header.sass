@@ -1,16 +1,126 @@
 .header
+   &__manage
+      width: 100%
+      position: fixed
+      z-index: 1000
+      right: -100%
+      top: 0
+      bottom: 0
+      background: var(--secBg)
+      color: var(--accent)
+      overflow-y: auto
+      transition: right .3s ease
+      &--active
+         right: 0
+      &-top
+         max-width: 100%
+         min-height: 50px
+         padding: 10px 14px
+         margin-bottom: 20px
+         display: flex
+         justify-content: space-between
+         align-items: center
+         background: #fff
+         box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05)
+      &-close
+         display: flex
+         align-items: center
+         font-weight: bold
+         font-size: 14px
+         color: var(--accent)
+         img
+            margin-right: 10px
+      &-item
+         margin-bottom: 10px
+         box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.05)
+         background: #fff
+         &--active
+            .header
+               &__manage
+                  &-toggle
+                     &::before
+                        border: 1px solid var(--btnColor)
+                        background: var(--btnColor)
+                  &-link__icon
+                     transform: rotate(180deg)
+                     fill: var(--accent)
+                  &-submenu
+                     opacity: 1
+                     max-height: none
+      &-link
+         padding: 14px 20px
+         padding-left: 40px
+         display: flex
+         align-items: center
+         position: relative
+         &__icon
+            width: 20px
+            height: 20px
+            margin-left: auto
+            fill: var(--textColor)
+      &-toggle
+         font-weight: 600
+         font-size: 15px
+         line-height: 18px
+         &::before
+            content: ''
+            position: absolute
+            left: 20px
+            top: 50%
+            transform: translateY(-50%)
+            width: 8px
+            height: 8px
+            border-radius: 50%
+            border: 1px solid var(--textColor)
+      &-submenu
+         max-height: 0
+         opacity: 0
+         overflow: hidden
+         will-change: max-height
+         transition: all 0.3s ease-out
+         font-size: 13px
+         line-height: 16px
+         color: var(--textColor)
+      .footer
+         &__address
+            margin-bottom: 25px
+         &__nav
+            max-width: 100%
+            margin-bottom: 0
+            grid-template-columns: 1fr
+            grid-gap: 20px
+            &-title
+               margin-bottom: 14px
+         &__main
+            padding: 20px
+         &__time
+            margin-bottom: 14px
    &__top
+      position: fixed
+      z-index: 100
+      left: 0
+      right: 0
+      top: 0
       background: #fff
+      &-wrapper
+         min-height: 50px
       &-inner
          min-height: 50px
-         padding: 13px 4px
+         padding: 5px 4px
          display: flex
          align-items: center
    &__burger
-      width: 24px
-      min-width: 24px
+      width: 40px
+      min-width: 40px
       height: 24px
+      height: 40px
       margin-right: 10px
+      display: flex
+      justify-content: center
+      align-items: center
+      img
+         width: 24px
+         height: 24px
    &__city
       display: none
       color: var(--accent)
@@ -47,6 +157,8 @@
       &-box
          position: relative
          z-index: 5
+      .soc
+         display: none
    &__menu
       margin-bottom: 48px
       display: flex
@@ -62,20 +174,42 @@
       display: none
       &-link
          position: relative
-         &::after
-            content: ''
-            width: 0
-            position: absolute
-            bottom: 0
-            right: 0
-            height: 1px
-            background: #fff
-            transition: width .3s ease
+         transition: color .2s ease
+      &-item
+         position: relative
+         cursor: pointer
          &:hover,
          &:focus
-            &::after
-               width: 100%
-               left: 0
+            .header
+               &__nav
+                  &-link
+                     color: #9ED8FE
+                  &-item
+                     &__submenu
+                        opacity: 1
+                        visibility: visible
+         &__submenu
+            min-width: 160px
+            padding: 16px 0
+            background: #fff
+            box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3)
+            border-radius: 10px
+            color: var(--accent)
+            font-size: 14px
+            position: absolute
+            top: 100%
+            left: 50%
+            transform: translateX(-50%)
+            opacity: 0
+            visibility: hidden
+            transition: opacity .2s ease, visibility .2s ease
+            a
+               display: block
+               padding: 10px 20px
+               transition: background .2s ease
+               &:hover,
+               &:focus
+                  background: #F5F6F9
    &__title
       margin-bottom: 10px
       font-weight: 900
@@ -119,13 +253,13 @@
    .header
       &__top
          &-inner
-            padding: 13px 14px
+            padding: 5px 14px 5px 0
 
 @media all and (min-width: 480px)
    .header
       &__top
          &-inner
-            padding: 13px 18px
+            padding: 5px 18px 5px 6px
       &__burger
          margin-right: 26px
       &__city
@@ -160,7 +294,7 @@
    .header
       &__top
          &-inner
-            padding: 13px 30px
+            padding: 5px 30px 5px 22px
       &__main
          &-inner
             padding: 36px 30px
@@ -180,6 +314,9 @@
 
 @media all and (min-width: 1280px)
    .header
+      &__top
+         &-inner
+            padding-left: 30px
       &__burger
          display: none
       &__city
@@ -202,25 +339,27 @@
          align-items: flex-end
          justify-content: flex-start
       &__logo
-         margin-right: 56px
+         margin-right: 36px
       &__write
          margin-left: auto
       &__nav
          width: 100%
          max-width: 700px
+         transform: translateY(22px)
          display: block
          &-list
             display: flex
             align-items: flex-start
-            flex-wrap: wrap
          &-item
-            margin-right: 40px
+            padding: 0 20px
+            padding-bottom: 22px
             &:last-child
                margin-right: 0
          &-link
             font-size: 15px
             line-height: 110%
             font-weight: bold
+            white-space: nowrap
       &__bottom
          font-size: 14px
          &-inner
@@ -243,6 +382,9 @@
                   padding: 36px 26px 42px 32px
             &__write
                display: block
+      .soc
+         display: flex
+         margin-left: auto
 
 @media all and (min-width: 1600px)
    .header
@@ -252,10 +394,12 @@
       &__menu
          margin-bottom: 110px
       &__logo
-         margin-right: 84px
+         margin-right: 60px
       &__nav
+         max-width: 800px
          &-item
-            margin-right: 54px
+            padding: 0 27px
+            padding-bottom: 22px
       &__title
          font-size: 50px
       &__bottom

@@ -1,6 +1,6 @@
 extends base/_layout
 block head
-    title Сервисы
+    title About
 
 block header
     header.header.header--minimal
@@ -245,63 +245,18 @@ block page
                     .article__box
                         p.article__box-text.
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut magna pulvinar, elementum elit ut, ultricies sapien. Proin elementum massa sit amet vehicula ullamcorper. Morbi convallis diam mi, id rhoncus nunc sagittis eget. Cras lacinia fringilla arcu. Fusce nec nisi lectus. Vivamus laoreet non mi sit amet imperdiet. Maecenas et eros lacus. Aenean aliquam malesuada tellus, eget convallis massa porttitor vel. Integer rhoncus elit sit amet cursus tincidunt. Maecenas eu dictum ligula.
+                    ul.article__list
+                        li Мы создаем возможности для реализации желаний наших клиентов на рынке недвижимости
+                        li Мы уважаем индивидуальность выбора каждого клиента
+                        li Наши услуги являются источником позитивных изменений в жизни наших клиентов
+                        li Критерии нашей работы  — представления современного человека о первоклассных услугах
                     block person
                         include blocks/_person
                     .article__box
                         h2.article__box-title Pellentesque convallis enim neque
                         p.article__box-text.
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut magna pulvinar, elementum elit ut, ultricies sapien. Proin elementum massa sit amet vehicula ullamcorper. Morbi convallis diam mi, id rhoncus nunc sagittis eget. Cras lacinia fringilla arcu. Fusce nec nisi lectus. Vivamus laoreet non mi sit amet imperdiet. Maecenas et eros lacus. Aenean aliquam malesuada tellus, eget convallis massa porttitor vel. Integer rhoncus elit sit amet cursus tincidunt. Maecenas eu dictum ligula.
-                    .article__picture
-                        picture
-                            source(srcset="images/article/picture-desk.webp" media="(min-width: 1600px)" type="image/webp")
-                            source(srcset="images/article/picture-desk.jpg" media="(min-width: 1600px)" type="image/jpg")
-                            source(srcset="images/article/picture-tablet.webp" media="(min-width: 768px)" type="image/webp")
-                            source(srcset="images/article/picture-tablet.jpg" media="(min-width: 768px)" type="image/jpg")
-                            source(srcset="images/article/picture-mob-2.webp" media="(min-width: 480px)" type="image/webp")
-                            source(srcset="images/article/picture-mob-2.jpg" media="(min-width: 480px)" type="image/jpg")
-                            source(srcset="images/article/picture-mob.webp" type="image/webp")
-                            img(src="images/article/picture-mob.jpg" alt="картинка" width="324" height="300")
                 .article__bottom
-                    .article__notice.notice
-                        .notice__inner
-                            p.notice__text.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut magna pulvinar, elementum elit ut, ultricies sapien. Proin elementum massa sit amet vehicula ullamcorper. Morbi convallis diam mi, id rhoncus nunc sagittis eget. Cras lacinia fringilla arcu. Fusce nec nisi lectus. Vivamus laoreet non mi sit amet imperdiet. Maecenas et eros lacus. Aenean aliquam malesuada tellus, eget convallis massa porttitor vel. Integer rhoncus elit sit amet cursus tincidunt. Maecenas eu dictum ligula.
-                            button.notice__btn.btn Напишите нам
-                    .article__box-wrapper
-                        .article__box
-                            h2.article__box-title Pellentesque convallis enim neque
-                            p.article__box-text.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut magna pulvinar, elementum elit ut, ultricies sapien. Proin elementum massa sit amet vehicula ullamcorper. Morbi convallis diam mi, id rhoncus nunc sagittis eget. Cras lacinia fringilla arcu. Fusce nec nisi lectus. Vivamus laoreet non mi sit amet imperdiet. Maecenas et eros lacus. Aenean aliquam malesuada tellus, eget convallis massa porttitor vel. Integer rhoncus elit sit amet cursus tincidunt. Maecenas eu dictum ligula.
-                        .article__box
-                            h2.article__box-title Pellentesque convallis enim neque
-                            p.article__box-text.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut magna pulvinar, elementum elit ut, ultricies sapien. Proin elementum massa sit amet vehicula ullamcorper. Morbi convallis diam mi, id rhoncus nunc sagittis eget. Cras lacinia fringilla arcu. Fusce nec nisi lectus. Vivamus laoreet non mi sit amet imperdiet. Maecenas et eros lacus. Aenean aliquam malesuada tellus, eget convallis massa porttitor vel. Integer rhoncus elit sit amet cursus tincidunt. Maecenas eu dictum ligula.
-                    .article__images
-                        .article__images-img
-                            picture
-                                source(srcset="images/article/article-desk-1.webp" media="(min-width: 480px)" type="image/webp")
-                                source(srcset="images/article/article-desk-1.jpg" media="(min-width: 480px)" type="image/jpg")
-                                source(srcset="images/article/article-mob-1.webp" type="image/webp")
-                                img(src="images/article/article-mob-1.jpg" alt="картинка" width="324" height="144")
-                        .article__images-img
-                            picture
-                                source(srcset="images/article/article-desk-2.webp" media="(min-width: 480px)" type="image/webp")
-                                source(srcset="images/article/article-desk-2.jpg" media="(min-width: 480px)" type="image/jpg")
-                                source(srcset="images/article/article-mob-2.webp" type="image/webp")
-                                img(src="images/article/article-mob-2.jpg" alt="картинка" width="324" height="144")
-                        .article__images-img
-                            picture
-                                source(srcset="images/article/article-desk-3.webp" media="(min-width: 480px)" type="image/webp")
-                                source(srcset="images/article/article-desk-3.jpg" media="(min-width: 480px)" type="image/jpg")
-                                source(srcset="images/article/article-mob-3.webp" type="image/webp")
-                                img(src="images/article/article-mob-3.jpg" alt="картинка" width="324" height="144")
-                        .article__images-img
-                            picture
-                                source(srcset="images/article/article-desk-4.webp" media="(min-width: 480px)" type="image/webp")
-                                source(srcset="images/article/article-desk-4.jpg" media="(min-width: 480px)" type="image/jpg")
-                                source(srcset="images/article/article-mob-4.webp" type="image/webp")
-                                img(src="images/article/article-mob-4.jpg" alt="картинка" width="324" height="144")
-
                     section.article__feedback.feedback.feedback--article
                         .feedback__inner
                             .feedback__info.container
@@ -316,16 +271,51 @@ block page
                                 picture
                                     source(srcset="images/feedback/feedback-article.webp" type="image/webp")
                                     img(src="images/feedback/feedback-article.png" alt="картинка" width="463" height="305")
-
-                    .article__houses
-                        .article__houses-img
-                            picture
-                                source(srcset="images/article/house-1.webp" type="image/webp")
-                                img(src="images/article/house-1.jpg" alt="картинка" width="701" height="403")
-                        .article__houses-img
-                            picture
-                                source(srcset="images/article/house-2.webp" type="image/webp")
-                                img(src="images/article/house-2.jpg" alt="картинка" width="392" height="300")
+                    .article__pro
+                        h2.article__pro-title Get more money for your home
+                        .article__pro-inner
+                            .person
+                                .person__top
+                                    .person__ava
+                                        picture
+                                            source(srcset="images/person/person.webp" type="image/webp")
+                                            img(src="images/person/person.jpg" alt="картинка" width="95" height="95")
+                                    .person__info
+                                        p.person__name Константин Константинопольский
+                                        p.person__post Должность
+                                        .person__rating
+                                            img(src="images/icons/star.svg" alt="звезда" width="20" height="19")
+                                            img(src="images/icons/star.svg" alt="звезда" width="20" height="19")
+                                            img(src="images/icons/star.svg" alt="звезда" width="20" height="19")
+                                            img(src="images/icons/star.svg" alt="звезда" width="20" height="19")
+                                            img(src="images/icons/star-grey.svg" alt="звезда" width="20" height="19")
+                                        a.person__btn.btn(href="#") Получить консультацию
+                                .person__bottom
+                                    a.person__tel(href="tel:+74955674567") +7 (495) 567-45-67
+                                    h2.person__title Pellentesque convallis enim neque
+                                    p.person__text.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut magna pulvinar, elementum elit ut, ultricies sapien. Proin elementum massa sit amet vehicula ullamcorper. 
+                            .person
+                                .person__top
+                                    .person__ava
+                                        picture
+                                            source(srcset="images/person/person.webp" type="image/webp")
+                                            img(src="images/person/person.jpg" alt="картинка" width="95" height="95")
+                                    .person__info
+                                        p.person__name Константин Константинопольский
+                                        p.person__post Должность
+                                        .person__rating
+                                            img(src="images/icons/star.svg" alt="звезда" width="20" height="19")
+                                            img(src="images/icons/star.svg" alt="звезда" width="20" height="19")
+                                            img(src="images/icons/star.svg" alt="звезда" width="20" height="19")
+                                            img(src="images/icons/star.svg" alt="звезда" width="20" height="19")
+                                            img(src="images/icons/star-grey.svg" alt="звезда" width="20" height="19")
+                                        a.person__btn.btn(href="#") Получить консультацию
+                                .person__bottom
+                                    a.person__tel(href="tel:+74955674567") +7 (495) 567-45-67
+                                    h2.person__title Pellentesque convallis enim neque
+                                    p.person__text.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut magna pulvinar, elementum elit ut, ultricies sapien. Proin elementum massa sit amet vehicula ullamcorper.
 
         section.faq.faq--bottom
             .faq__inner.container

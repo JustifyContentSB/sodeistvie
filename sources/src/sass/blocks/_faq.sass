@@ -6,12 +6,6 @@
       font-size: 22px
       line-height: 100%
       color: var(--accent)
-   &__item
-      font-weight: 300
-      font-size: 13px
-      line-height: 140%
-      color: var(--accent)
-      border-bottom: 1px solid #E6E6E6
    &__question
       display: block
       width: 100%
@@ -29,8 +23,29 @@
       top: 50%
       transform: translateY(-50%)
       fill: #c4c4c4
+      transition: transform .3s ease
    &__answer
-      display: none
+      max-height: 0
+      opacity: 0
+      overflow: hidden
+      will-change: max-height
+      transition: all 0.3s ease-out
+      color: var(--textColor)
+      box-sizing: content-box
+   &__item
+      font-weight: 300
+      font-size: 13px
+      line-height: 140%
+      color: var(--accent)
+      border-bottom: 1px solid #E6E6E6
+      &--open
+         .faq
+            &__arrow
+               transform: translateY(-50%) rotate(180deg)
+               fill: var(--accent)
+            &__answer
+               opacity: 1
+               padding: 10px 0
 
 @media all and (min-width: 768px)
    .faq

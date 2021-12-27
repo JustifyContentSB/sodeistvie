@@ -1,19 +1,136 @@
 header.header
-    .header__inner  
-        .header__top
-            .header__top-inner.container
-                a.header__burger(href="#")
-                    svg 
-                        use(href="images/sprites/main.stack.svg#svg-menu")
-                .header__city
-                    button.header__city-current  Москва и Московская область
-                        svg.header__city-arrow
-                            use(href="images/sprites/main.stack.svg#svg-arrow-down")
-                .header__time
-                    p Понедельник - Пятница: с 09:00 до 21:00
-                    p Суббота - Воскресенье: с 09:00 до 18:00
+    .header__inner
+        .header__manage
+            .header__manage-top.container
+                a.header__manage-close(href="#")
+                    img(src="images/icons/close.svg", alt="закрыть меню" width="24" height="24")
+                    span Закрыть
                 .header__contact
                     a.header__contact-tel(href="tel:+74955674567") +7 (495) 567-45-67
+            .header__manage-main
+                nav.header__manage-nav
+                    ul.header__manage-list
+                        li.header__manage-item
+                            a.header__manage-link.header__manage-toggle(href="#") 
+                                span Наши услуги
+                                svg.header__manage-link__icon
+                                    use(href="images/sprites/main.stack.svg#svg-arrow-circle-down")
+                            ul.header__manage-submenu
+                                li
+                                    a.header__manage-link(href="#") Купить
+                                li
+                                    a.header__manage-link(href="#") Снять
+                                li
+                                    a.header__manage-link(href="#") Продать
+                                li
+                                    a.header__manage-link(href="#") Сдать
+                                li
+                                    a.header__manage-link(href="#") Оценить
+                                li
+                                    a.header__manage-link(href="#") Оформить ипотеку
+                        li.header__manage-item
+                            a.header__manage-link.header__manage-toggle(href="#") 
+                                span Недвижимость
+                                svg.header__manage-link__icon
+                                    use(href="images/sprites/main.stack.svg#svg-arrow-circle-down")
+                            ul.header__manage-submenu
+                                li
+                                    a.header__manage-link(href="#") Квартиры
+                                li
+                                    a.header__manage-link(href="#") Новостройки
+                                li
+                                    a.header__manage-link(href="#") Дома и участки
+                                li
+                                    a.header__manage-link(href="#") Аренда
+                                li
+                                    a.header__manage-link(href="#") Коммерческая
+                                li
+                                    a.header__manage-link(href="#") Гаражи
+                        li.header__manage-item
+                            a.header__manage-link.header__manage-toggle(href="#") 
+                                span Другое
+                                svg.header__manage-link__icon
+                                    use(href="images/sprites/main.stack.svg#svg-arrow-circle-down")
+                            ul.header__manage-submenu
+                                li
+                                    a.header__manage-link(href="#") Ипотека
+                                li
+                                    a.header__manage-link(href="#") Аналитика
+                                li
+                                    a.header__manage-link(href="#") Стоимость услуг
+                                li
+                                    a.header__manage-link(href="#") Новости
+                                li
+                                    a.header__manage-link(href="#") Рефинансирование
+                                li
+                                    a.header__manage-link(href="#") Гарантия безопасности
+                        li.header__manage-item
+                            a.header__manage-link.header__manage-toggle(href="#") 
+                                span О компании
+                                svg.header__manage-link__icon
+                                    use(href="images/sprites/main.stack.svg#svg-arrow-circle-down")
+                            ul.header__manage-submenu
+                                li
+                                    a.header__manage-link(href="#") Отзывы
+                                li
+                                    a.header__manage-link(href="#") Вакансии
+                                li
+                                    a.header__manage-link(href="#") СМИ о нас
+                                li
+                                    a.header__manage-link(href="#") Новости
+                                li
+                                    a.header__manage-link(href="#") Пресс-центр
+                                li
+                                    a.header__manage-link(href="#") Франшиза
+            .footer
+                .footer__inner
+                    .footer__main.container
+                        .footer__bottom
+                            address.footer__address
+                                p.footer__location
+                                    |   Москва, ул. Профсоюзная, д. 56 этаж 10, #[br]
+                                    a(href="tel:+74951200005") тел. +7 (495) 120-00-05
+                                a.footer__tel(href="tel:+74955674567") +7 (495) 567-45-67
+                                .footer__time
+                                    p Понедельник - Пятница: с 09:00 до 21:00
+                                    p Суббота - Воскресенье: с 09:00 до 18:00
+                                ul.soc
+                                    li.soc__item
+                                        a.soc__link(href="#")
+                                            img(src="images/icons/telegram.svg" alt="телеграм" width="23" height="19")
+                                    li.soc__item
+                                        a.soc__link.soc__link--whatsapp(href="#")
+                                            img(src="images/icons/whatsapp.svg" alt="whatsapp" width="24" height="24")
+                            nav.footer__nav
+                                .footer__nav-col
+                                    h2.footer__nav-title О компании
+                                    ul.footer__nav-list
+                                        li.footer__nav-item
+                                            a(href="#") Отзывы
+                                        li.footer__nav-item
+                                            a(href="#") Вакансии
+                                        li.footer__nav-item
+                                            a(href="#") СМИ о нас
+                                        li.footer__nav-item
+                                            a(href="#") Новости
+                                        li.footer__nav-item
+                                            a(href="#") Пресс-центр
+                                        li.footer__nav-item
+                                            a(href="#") Франшиза
+        .header__top-wrapper
+            .header__top
+                .header__top-inner.container
+                    a.header__burger(href="#")
+                        img(src="images/icons/menu.svg", alt="открыть меню" width="24" height="24")
+                    .header__city
+                        button.header__city-current  Москва и Московская область
+                            svg.header__city-arrow
+                                use(href="images/sprites/main.stack.svg#svg-arrow-down")
+                    .header__time
+                        p Понедельник - Пятница: с 09:00 до 21:00
+                        p Суббота - Воскресенье: с 09:00 до 18:00
+                    .header__contact
+                        a.header__contact-tel(href="tel:+74955674567") +7 (495) 567-45-67
         .header__main
             .header__main-img.background-image
                     picture
@@ -36,17 +153,89 @@ header.header
                             ul.header__nav-list
                                 li.header__nav-item
                                     a.header__nav-link(href="#") Купить
+                                    ul.header__nav-item__submenu
+                                        li
+                                            a(href="#") Вторичная
+                                        li
+                                            a(href="#") Новостройки
+                                        li
+                                            a(href="#") Дома и участки
+                                        li
+                                            a(href="#") Коммерческая
+                                        li
+                                            a(href="#") Гаражи
                                 li.header__nav-item
                                     a.header__nav-link(href="#") Снять
+                                    ul.header__nav-item__submenu
+                                        li
+                                            a(href="#") Вторичная
+                                        li
+                                            a(href="#") Новостройки
+                                        li
+                                            a(href="#") Дома и участки
+                                        li
+                                            a(href="#") Коммерческая
+                                        li
+                                            a(href="#") Гаражи
                                 li.header__nav-item
                                     a.header__nav-link(href="#") Продать
+                                    ul.header__nav-item__submenu
+                                        li
+                                            a(href="#") Вторичная
+                                        li
+                                            a(href="#") Новостройки
+                                        li
+                                            a(href="#") Дома и участки
+                                        li
+                                            a(href="#") Коммерческая
+                                        li
+                                            a(href="#") Гаражи
                                 li.header__nav-item
                                     a.header__nav-link(href="#") Сдать
+                                    ul.header__nav-item__submenu
+                                        li
+                                            a(href="#") Вторичная
+                                        li
+                                            a(href="#") Новостройки
+                                        li
+                                            a(href="#") Дома и участки
+                                        li
+                                            a(href="#") Коммерческая
+                                        li
+                                            a(href="#") Гаражи
                                 li.header__nav-item
                                     a.header__nav-link(href="#") Оценить
+                                    ul.header__nav-item__submenu
+                                        li
+                                            a(href="#") Вторичная
+                                        li
+                                            a(href="#") Новостройки
+                                        li
+                                            a(href="#") Дома и участки
+                                        li
+                                            a(href="#") Коммерческая
+                                        li
+                                            a(href="#") Гаражи
                                 li.header__nav-item
                                     a.header__nav-link(href="#") Оформить ипотеку
-                        button.header__write.btn Напишите нам
+                                    ul.header__nav-item__submenu
+                                        li
+                                            a(href="#") Вторичная
+                                        li
+                                            a(href="#") Новостройки
+                                        li
+                                            a(href="#") Дома и участки
+                                        li
+                                            a(href="#") Коммерческая
+                                        li
+                                            a(href="#") Гаражи
+                        ul.soc
+                            li.soc__item
+                                a.soc__link(href="#")
+                                    img(src="images/icons/telegram.svg", alt="телеграм" width="23" height="19")
+                            li.soc__item
+                                a.soc__link.soc__link--whatsapp(href="#")
+                                    img(src="images/icons/whatsapp.svg", alt="whatsapp" width="24" height="24")
                     .header__info 
                         h1.header__title Вся недвижимость Москвы #[br] и Московской области
                         p.header__descr.
