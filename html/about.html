@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>About</title>
+    <title>Информация</title>
     <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -261,7 +261,7 @@
                     <div class="feedback__info container">
                       <h2 class="feedback__title">Aenean eget lacus et leo rhoncus vulputate sed vel urna. Sed consequat fringilla lacus ut sollicitudin. Sed iaculis mattis sem, sed dignissim purus fermentum non.</h2>
                       <p class="feedback__text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus dignissim ut massa non vulputate. Sed nec metus eget sem tempor fermentum ut tempor eros. Etiam accumsan nulla id sapien dapibus hendrerit.</p>
-                      <div class="feedback__manage"><a class="feedback__btn feedback__btn--request btn" href="#">Заполните онлайн заявку</a><a class="feedback__btn btn" href="tel:+74955674567">Позвоните нам</a></div>
+                      <div class="feedback__manage"><a class="feedback__btn feedback__btn--request btn btn-dark" href="#">Заполните онлайн заявку</a><a class="feedback__btn btn" href="tel:+74955674567">Позвоните нам</a></div>
                     </div>
                     <div class="feedback__img">
                       <picture>
@@ -517,6 +517,31 @@
           </div>
         </div>
       </footer>
+      <div class="popup popup-contact">
+        <div class="popup__inner"><a class="popup__close" href="#"><img src="images/icons/close.svg" alt="закрыть попап"></a>
+          <div class="popup__icon"><img src="images/icons/tel.svg" alt="иконка" width="50" height="50"></div>
+          <div class="popup__info">
+            <h2 class="popup__title">Бесплатная консультация</h2>
+            <p class="popup__text">Да, это действительно бесплатно</p>
+            <form class="popup__form" action="#">
+              <label class="popup__form-label">
+                <input class="popup__form-field" type="tel" placeholder="+7">
+              </label>
+              <button class="popup__form-btn btn">Жду звонка!</button>
+              <p class="popup__form-agree">Отправляя заявку, вы соглашаетесь на <br> обработку <a href="#">персональных данных</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-thanks">
+        <div class="popup__inner"><a class="popup__close" href="#"><img src="images/icons/close.svg" alt="закрыть попап"></a>
+          <div class="popup__icon"><img src="images/icons/success.svg" alt="иконка" width="40" height="28"></div>
+          <div class="popup__info">
+            <h2 class="popup__title">Спасибо!</h2>
+            <p class="popup__text">Мы перезвоним вам в ближайшее время.</p>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/main.min.js"></script>
   </body>

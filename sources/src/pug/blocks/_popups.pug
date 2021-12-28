@@ -1,0 +1,25 @@
+.popup.popup-contact
+   .popup__inner
+      a.popup__close(href="#")
+         img(src="images/icons/close.svg", alt="закрыть попап")
+      .popup__icon
+         img(src="images/icons/tel.svg", alt="иконка" width="50" height="50")
+      .popup__info
+         h2.popup__title Бесплатная консультация
+         p.popup__text Да, это действительно бесплатно
+         form.popup__form(action="#")
+            label.popup__form-label
+               input.popup__form-field(type="tel" placeholder="+7")
+            button.popup__form-btn.btn Жду звонка!
+            p.popup__form-agree Отправляя заявку, вы соглашаетесь на #[br] обработку 
+               a(href="#") персональных данных
+
+.popup.popup-thanks
+   .popup__inner
+      a.popup__close(href="#")
+         img(src="images/icons/close.svg", alt="закрыть попап")
+      .popup__icon
+         img(src="images/icons/success.svg", alt="иконка" width="40" height="28")
+      .popup__info
+         h2.popup__title Спасибо!
+         p.popup__text Мы перезвоним вам в ближайшее время.

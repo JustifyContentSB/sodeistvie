@@ -7,6 +7,119 @@
    border-radius: 3px
    color: #fff
    background: var(--btnColor)
-   font-weight: 600
+   font-weight: 500
    font-size: 14px
    line-height: 17px
+   transition: background .2s ease, color .2s ease
+   &:hover,
+   &:focus,
+   &:active
+      background: #33A2EB
+   &-hover,
+   &-active
+      background: #33A2EB
+   &-disabled,
+   &:disabled
+      background: rgba(51, 162, 235, 0.3)
+      &:hover,
+      &:focus,
+      &:active
+         background: rgba(51, 162, 235, 0.3)
+   &-dark
+      background: #273653
+      &:hover,
+      &:focus
+         background: #37486A
+      &:active
+         background: #12203A
+      &.btn-hover
+         background: #37486A
+      &.btn-active
+         background: #12203A
+      &.btn-disabled,
+      &:disabled
+         background: rgba(39, 54, 83, 0.3)
+         &:hover,
+         &:focus,
+         &:active
+            background: rgba(39, 54, 83, 0.3)
+   &-outline
+      background: transparent
+      border: 1px solid #33A2EB
+      color: #33A2EB
+      .btn__svg
+         fill: #33A2EB
+      &:hover,
+      &:focus,
+      &.btn-hover
+         background: #33A2EB
+         border: 1px solid var(--btnColor)
+         color: #fff
+         .btn__svg
+            fill: #fff
+      &:active,
+      &.btn-active
+         background: #46B6FF
+         border: 1px solid #46B6FF
+         color: #fff
+         .btn__svg
+            fill: #fff
+      &:disabled,
+      &.btn-disabled
+         color: #C4C4C4
+         border: 1px solid #C4C4C4
+         .btn__svg
+            fill: #C4C4C4
+         &:hover,
+         &:focus,
+         &:active
+            background: transparent
+   &-minimal
+      background: transparent
+      border: none
+      color: #33A2EB
+      .btn__svg
+         fill: #33A2EB
+      &:hover,
+      &:focus,
+      &:active,
+      &.btn-hover,
+      &.btn-active
+         color: var(--accent)
+         background: transparent
+         .btn__svg
+            fill: var(--accent)
+      &.btn-disabled,
+      &:disabled
+         color: #C4C4C4
+         .btn__svg
+            fill: #C4C4C4
+         &:hover,
+         &:focus,
+         &:active
+            color: #C4C4C4
+            .btn__svg
+               fill: #C4C4C4
+   &__svg
+      width: 18px
+      height: 17px
+      fill: white
+      transition: fill .2s ease
+   &-arrow
+      &-left
+         min-width: 98px
+         .btn__svg
+            margin-right: 6px
+      &-right
+         min-width: 98px
+         .btn__svg
+            margin-left: 6px
+      &-double
+         span
+            margin: 0 6px
+      &-one
+         min-width: 40px
+         padding: 11px 11px 12px
+         .btn
+            &__svg
+               margin: 0

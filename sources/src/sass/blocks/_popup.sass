@@ -1,0 +1,83 @@
+.popup
+   position: fixed
+   z-index: 1000
+   top: 0
+   bottom: 0
+   left: 0
+   right: 0
+   background: rgba(#000, 0.5)
+   display: none
+   &--active
+      display: flex
+   &-thanks
+      .popup
+         &__info
+            margin: auto
+   &__inner
+      width: calc(100% - 40px)
+      max-width: 380px
+      max-height: 90vh
+      min-height: 376px
+      padding: 30px
+      margin: auto
+      background: #fff
+      border-radius: 20px
+      overflow-y: auto
+      position: relative
+      text-align: center
+      display: flex
+      flex-direction: column
+   &__close
+      position: absolute
+      right: 25px
+      top: 25px
+   &__icon
+      margin-bottom: 22px
+      display: flex
+      justify-content: center
+      align-items: center
+   &__title
+      margin-bottom: 10px
+      font-weight: 800
+      font-size: 20px
+      line-height: 100%
+      color: var(--accent)
+   &__text
+      margin-bottom: 20px
+      font-size: 14px
+      line-height: 100%
+      color: var(--textColor)
+   &__form
+      display: flex
+      flex-direction: column
+      align-items: center
+      &-label
+         width: 100%
+         margin-bottom: 20px
+      &-field
+         width: 100%
+         height: 50px
+         padding: 15px 16px
+         border: 1px solid var(--textColor)
+         border-radius: 3px
+         color: var(--accent)
+         &::placeholder
+            color: var(--textColor)
+      &-btn
+         width: 100%
+         margin-bottom: 20px
+      &-agree
+         font-weight: 300
+         font-size: 12px
+         line-height: 130%
+         color: var(--textColor)
+         a
+            color: var(--btnColor)
+            &:hover,
+            &:focus
+               text-decoration: underline
+
+@media all and (min-width: 480px)
+   .popup
+      &__inner
+         padding: 40px 50px

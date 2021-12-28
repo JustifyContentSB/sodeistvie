@@ -6,13 +6,13 @@
 
 .svg-svg-arrow-circle-down {
 	@extend %svg-common;
-	background-position: 94.28571428571429% 59.09090909090909%;
+	background-position: 94.28571428571429% 41.935483870967744%;
 	background-size: math.div(92, 22)*100% auto;
 	width: 22px;
 
 }
 @mixin svg-pos-svg-arrow-circle-down {
-	background-position: 94.28571428571429% 59.09090909090909%;
+	background-position: 94.28571428571429% 41.935483870967744%;
 }
 @mixin svg-svg-arrow-circle-down-hover {
 	.svg-svg-arrow-circle-down {
@@ -35,13 +35,13 @@
 
 .svg-svg-arrow-down {
 	@extend %svg-common;
-	background-position: 89.1891891891892% 100%;
+	background-position: 89.1891891891892% 72.72727272727273%;
 	background-size: math.div(92, 18)*100% auto;
 	width: 18px;
 
 }
 @mixin svg-pos-svg-arrow-down {
-	background-position: 89.1891891891892% 100%;
+	background-position: 89.1891891891892% 72.72727272727273%;
 }
 @mixin svg-svg-arrow-down-hover {
 	.svg-svg-arrow-down {
@@ -58,6 +58,64 @@
 }
 
 .svg-svg-arrow-down-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-svg-arrow-left {
+	@extend %svg-common;
+	background-position: 0 100%;
+	background-size: math.div(92, 18)*100% auto;
+	width: 18px;
+
+}
+@mixin svg-pos-svg-arrow-left {
+	background-position: 0 100%;
+}
+@mixin svg-svg-arrow-left-hover {
+	.svg-svg-arrow-left {
+		@include svg-pos-svg-arrow-left-hover
+	}
+}
+
+.svg-svg-arrow-left:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(18, 18)*100%;
+}
+
+.svg-svg-arrow-left-dims {
+	width: 18px;
+	height: 18px;
+}
+
+.svg-svg-arrow-right {
+	@extend %svg-common;
+	background-position: 24.324324324324323% 100%;
+	background-size: math.div(92, 18)*100% auto;
+	width: 18px;
+
+}
+@mixin svg-pos-svg-arrow-right {
+	background-position: 24.324324324324323% 100%;
+}
+@mixin svg-svg-arrow-right-hover {
+	.svg-svg-arrow-right {
+		@include svg-pos-svg-arrow-right-hover
+	}
+}
+
+.svg-svg-arrow-right:before {
+	content:"";
+	display:block;
+	font-size:0;
+	line-height:0;
+	padding-top: math.div(18, 18)*100%;
+}
+
+.svg-svg-arrow-right-dims {
 	width: 18px;
 	height: 18px;
 }
@@ -151,13 +209,13 @@
 
 .svg-svg-vk {
 	@extend %svg-common;
-	background-position: 0 100%;
+	background-position: 0 64.70588235294117%;
 	background-size: math.div(92, 33)*100% auto;
 	width: 33px;
 
 }
 @mixin svg-pos-svg-vk {
-	background-position: 0 100%;
+	background-position: 0 64.70588235294117%;
 }
 @mixin svg-svg-vk-hover {
 	.svg-svg-vk {
@@ -180,13 +238,13 @@
 
 .svg-svg-youtube {
 	@extend %svg-common;
-	background-position: 55.932203389830505% 100%;
+	background-position: 55.932203389830505% 64.70588235294117%;
 	background-size: math.div(92, 33)*100% auto;
 	width: 33px;
 
 }
 @mixin svg-pos-svg-youtube {
-	background-position: 55.932203389830505% 100%;
+	background-position: 55.932203389830505% 64.70588235294117%;
 }
 @mixin svg-svg-youtube-hover {
 	.svg-svg-youtube {

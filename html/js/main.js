@@ -22,6 +22,8 @@ $(document).ready(function () {
   faqAnswer();
   toggleMenu();
   menuToggle();
+  consultPopup();
+  closePopup();
 }); // Your functions here
 
 function faqAnswer() {
@@ -109,5 +111,22 @@ function sss() {
         content.style.maxHeight = null;
       }
     });
+  });
+}
+
+function consultPopup() {
+  $('.person__btn').on('click', function (e) {
+    e.preventDefault();
+    $('popup').removeClass('popup--active');
+    $('.popup-contact').addClass('popup--active');
+    $('body').addClass('no-scroll');
+  });
+}
+
+function closePopup() {
+  $('.popup__close').on('click', function (e) {
+    e.preventDefault();
+    $(this).parent('.popup__inner').parent('.popup').removeClass('popup--active');
+    $('body').removeClass('no-scroll');
   });
 }
