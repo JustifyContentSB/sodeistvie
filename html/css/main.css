@@ -3162,7 +3162,11 @@ picture {
   margin-bottom: 20px
 }
 .article__images-img {
-  margin-bottom: 12px
+  min-height: 144px;
+  margin-bottom: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center
 }
 .article__images-img img {
   width: 100%
@@ -3198,12 +3202,10 @@ picture {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  overflow: hidden
-}
-.article__houses-img img {
-  height: 300px;
-  width: auto;
-  max-width: none
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center
 }
 .article__list {
   margin-bottom: 20px;
@@ -3308,7 +3310,8 @@ picture {
   }
   .article__images-img {
     width: calc(50% - 6px);
-    min-width: calc(50% - 6px)
+    min-width: calc(50% - 6px);
+    min-height: 300px
   }
   .article__pro .person__bottom {
     padding-left: 125px
